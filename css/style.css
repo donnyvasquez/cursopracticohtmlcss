@@ -35,6 +35,30 @@ img {
     max-width: 100%;
 }
 
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+label strong {
+    display: block;
+}
+
+input[type=text] {
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: bolder;
+    width: 100%;
+    border: none;
+    padding: 1rem 2rem;
+}
+
 .container {
     max-width: 90%;
     margin: auto;
@@ -201,6 +225,7 @@ nav ul li:last-child {
 
 .card .card_description p {
     font-weight: 300;
+    text-align: center;
 }
 
 .card h2 {
@@ -279,6 +304,10 @@ nav ul li:last-child {
 
 #stories .card {
     background-color: rgba(250, 250, 250, 0.5);
+}
+
+#stories .card h2 {
+    font-size: 1.125rem;
 }
 
 footer {
