@@ -31,6 +31,10 @@ p {
     margin-bottom: 2rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     max-width: 90%;
     margin: auto;
@@ -147,8 +151,31 @@ nav ul li:last-child {
 
 .row {
     display: flex;
-    gap: 2rem;
+    column-gap: 2rem;
     justify-content: space-around;
+}
+
+#products .product h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#products .product.row {
+    margin-bottom: 2rem;
+}
+
+#products .product.row:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+#products .product.row .description {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+
+#products .product.row img {
+    border-radius: 0.25rem;
 }
 
 .card {

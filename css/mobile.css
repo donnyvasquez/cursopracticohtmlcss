@@ -1,5 +1,6 @@
 @media (max-width:600px) {
-    .row {
+    .row,
+    #products .product.row:nth-child(odd) {
         flex-direction: column;
     }
     #contact {
@@ -18,5 +19,8 @@
     }
     #contact form label input[type=submit] {
         background-color: var(--dark-color);
+    }
+    [class*="col-"] {
+        width: 100%;
     }
 }
