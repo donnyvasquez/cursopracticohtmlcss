@@ -199,6 +199,53 @@ nav ul li:last-child {
     display: block;
 }
 
+#contact {
+    background-color: var(--grey-light-color);
+}
+
+#contact form {
+    display: flex;
+    justify-content: center;
+}
+
+#contact form>* {
+    width: 33%;
+}
+
+#contact label .label-text {
+    display: none;
+}
+
+#contact form label input {
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    border-style: solid;
+    border-radius: 0;
+}
+
+#contact form label:first-child input {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+#contact form label:last-child input {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+#contact form label:not(:first-child):not(:last-child) input {
+    border-left: none;
+    border-right: none;
+}
+
+#contact form label input[type=submit] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
 #stories {
     background: url(https://image.freepik.com/foto-gratis/resumen-degradado-gris_176532-7758.jpg) center 100%;
 }

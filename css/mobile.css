@@ -2,4 +2,21 @@
     .row {
         flex-direction: column;
     }
+    #contact {
+        background-color: var(--primary-color);
+    }
+    #contact form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #contact form>* {
+        width: auto;
+    }
+    #contact form label input {
+        border-radius: 0.25rem;
+        border: inherit;
+    }
+    #contact form label input[type=submit] {
+        background-color: var(--dark-color);
+    }
 }
