@@ -328,3 +328,27 @@ footer .container {
 footer .container a {
     color: var(--white-color);
 }
+
+.paypal {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: max-content auto max-content;
+}
+
+.paypal #venta {
+    align-items: center;
+    background-color: #eb7dea;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.paypal #venta img {
+    max-width: 300px;
+}
+
+.paypal #venta a {
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
